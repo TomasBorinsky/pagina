@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Admin</title>
+  <link rel="stylesheet" href="css/admin.css"> 
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="gh-header">
+        <div class="gh-container">
+            <div class="logo">GameHub</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li id="saludo-header" class="text-white"></li>
+                </ul>
+        </div>
+    </header>
+
+
+    <!-- ABM Torneos / Campañas -->
+    <section class="seccion">
+        <h2>Gestión de Torneos y Campañas</h2>
+
+        <!-- Formulario de alta / edición -->
+        <form id="form-abm" class="admin-form">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <input type="text" id="juego" placeholder="Juego" required>
+            <input type="text" id="plataforma" placeholder="Plataforma" required>
+            <input type="date" id="fecha" required>
+            <input type="number" id="cupos" placeholder="Cupos" required>
+            <input type="text" id="objetivo" placeholder="Objetivo solidario" required>
+            <input type="text" id="reglas" placeholder="Reglas">
+            <input type="text" id="premios" placeholder="Premios simbólicos">
+            <input type="url" id="pdf" placeholder="Enlace reglamento PDF">
+            <input type="url" id="stream" placeholder="Link de stream">
+            <button type="submit">Agregar / Actualizar</button>
+        </form>
+
+        <!-- Listado -->
+        <h3>Listado de Torneos / Campañas</h3>
+        <table id="tabla-abm">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Juego</th>
+                    <th>Plataforma</th>
+                    <th>Fecha</th>
+                    <th>Cupos</th>
+                    <th>Objetivo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- aca mete los torneos que yo cree-->
+            </tbody>
+        </table>
+  </section>
+
+    <section class="seccion">
+        <a href="index.html" class="btn btn-colaborar">Volver al Home</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="gh-footer">
+       <p>© 2025 GameHub - El gaming conoce la solidaridad</p>
+    </footer>
+    <script src="js/admin.js"></script>
+</body>
+</html>

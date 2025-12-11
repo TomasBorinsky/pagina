@@ -1,0 +1,217 @@
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--- PARA CELUS---*/
+@media (max-width: 600px) {
+
+  .gh-header .gh-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+  .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+  #galeria img,
+  #galeria .video {
+        width: 90%;
+    }
+
+  .card {
+        max-width: 100%;
+    }
+}
+
+
+/* --- HEADER --- */
+.gh-header .nav-links a, #saludo-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.gh-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gh-header {
+    background: url("../img/keyboard-lpsw7sus4web2y8i.jpg") center/cover no-repeat;
+    padding: 40px 0;
+    border-bottom: 2px solid #222;
+}
+
+.gh-header .gh-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4af3ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4af3ff;
+}
+
+/* --- FOOTER --- */
+.gh-footer {
+    padding: 20px 0;
+    background: #111;
+    text-align: center;
+    border-top: 2px solid #222;
+}
+
+.gh-footer p {
+    color: #888;
+    font-size: 14px;
+}
+
+
+@keyframes modalFade {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* --- FORMULARIO ABM --- */
+#form-abm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: #151515; 
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #4af3ff;
+}
+
+#form-abm input, 
+#form-abm button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+    flex: 1 1 calc(50% - 20px); 
+    font-size: 14px;
+}
+
+#form-abm button {
+    flex: 1 1 100%;
+    background-color: #4af3ff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-abm button:hover {
+  background-color: #34d6e5;
+}
+
+/* --- TABLA ABM --- */
+#tabla-abm {
+    width: 100%;
+    border-collapse: collapse;
+    background: #151515;
+    border: 2px solid #4af3ff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#tabla-abm th, #tabla-abm td {
+    padding: 12px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 14px;
+}
+
+#tabla-abm th {
+    background-color: #0f3940;
+    color: #4af3ff;
+    font-weight: bold;
+}
+
+/* --- BOTONES EDITAR/BORRAR --- */
+#tabla-abm button {
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+#tabla-abm button.edit, .btn-editar {
+    background-color: #4af3ff;
+    color: #000;
+}
+
+#tabla-abm button.edit:hover, .btn-editar:hover {
+    background-color: #34d6e5;
+}
+
+#tabla-abm button.delete, .btn-borrar {
+    background-color: #ff4a4a;
+    color: #fff;
+}
+
+#tabla-abm button.delete:hover, .btn-borrar:hover {
+    background-color: #e03b3b;
+}
+
+/* --- SALUDO --- */
+#saludo {
+    text-align: center;
+    color: #4af3ff;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* --- BOTONES VOLVER --- */
+.btn-colaborar {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4af3ff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-colaborar:hover {
+    background-color: #34d6e5;
+    color: #000;
+}

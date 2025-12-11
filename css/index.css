@@ -1,0 +1,277 @@
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+h2 {
+  color: #4af3ff;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ---  CONTAINER GENERAL--- */
+.gh-header {
+  width: 100%; 
+  background: url("../img/keyboard-lpsw7sus4web2y8i.jpg") center/cover no-repeat;
+  padding: 40px 0;
+  border-bottom: 2px solid #222;
+}
+
+.gh-header .gh-container {
+  max-width: 1100px; 
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gh-header .nav-links a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4af3ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4af3ff;
+}
+
+/* ---mISION--- */
+.objective-card {
+  height: 150px;              
+  background-size: cover;      
+  background-position: center; 
+  border-radius: 12px;         
+  margin-bottom: 20px;         
+  color: #4af3ff;             
+  position: relative;          
+  display: flex;
+  align-items: flex-end;       
+  justify-content: center;     
+  padding: 10px;               
+  text-align: center;          
+  font-weight: bold;
+  
+  
+}
+
+.objective-card span {
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 10px; 
+}
+
+/* --- tuneo de letras dentro de seccion --- */
+.seccion {
+  padding: 60px 20px;
+  border-bottom: 1px solid #222;
+}
+
+.seccion h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #4af3ff;
+}
+
+.seccion ul{
+  color: #4af3ff;
+  font-size: 12px;
+}
+
+/* --- CARTAS --- */
+.card {
+    max-width: 250px; 
+    margin: auto; 
+    background-color: #151515;  
+    color: #fff;                 
+    border: 1px solid #4af3ff;   
+}
+
+.card .btn-primary {
+  background-color: #4af3ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+}
+
+.card .btn-primary:hover {
+  background-color: #34d6e5;
+  color: #000;
+}
+
+/* --- TABLa RANKING --- */
+.ranking-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranking-table {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-collapse: collapse;
+  background: #151515;
+  border: 2px solid #4af3ff;
+  text-align: center;
+}
+
+.ranking-table th,
+.ranking-table td {
+  padding: 12px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+.ranking-table th {
+  background: #0f3940;
+  color: #4af3ff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/*--- GALERIA--- */
+#galeria {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;      /* (SIN ESTO NO FUNCIONA EL SCROLL) */
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+#galeria img,
+#galeria .video {
+  flex-shrink: 0;        
+}
+
+/* TAMAÑO FIJO VIDEO */
+#galeria .video {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+/* TAMAÑO FIJO IMAGEN */
+#galeria img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* TUNEO LETRAS DE REGLAMENTO */
+#reglamentos h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #4af3ff;
+}
+
+#reglamentos li, i{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff; 
+}
+
+#reglamentos summary{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* --- FOOTER --- */
+.gh-footer {
+  padding: 20px 0;
+  background: #111;
+  text-align: center;
+  border-top: 2px solid #222;
+}
+
+.gh-footer p {
+  color: #888;
+  font-size: 14px;
+}
+
+
+/*--- PARA CELUS---*/
+@media (max-width: 600px) {
+
+  .gh-header .gh-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #galeria img,
+  #galeria .video {
+    width: 90%;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+@keyframes modalFade {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* --- TUNEO SCROLL --- */
+
+/* ANCHO */
+#galeria::-webkit-scrollbar {
+  height: 10px;            
+}
+
+/* FONDO ABAJO DE LA BARRA */
+#galeria::-webkit-scrollbar-track {
+  background: #111;         
+  border-radius: 10px;
+}
+
+/* COLOR DE LA BARRA */
+#galeria::-webkit-scrollbar-thumb {
+  background: #4af3ff;      
+  border-radius: 10px;
+}
+
+/* ESTO LA HACE MAS OSCURA CUANDO PONGO EL MOUSE */
+#galeria::-webkit-scrollbar-thumb:hover {
+  background: #34d6e5;      
+}

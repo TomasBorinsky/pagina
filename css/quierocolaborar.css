@@ -1,0 +1,148 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--- PARA CELUS---*/
+@media (max-width: 600px) {
+
+  .gh-header .gh-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #galeria img,
+  #galeria .video {
+    width: 90%;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+
+/* --- HEADER --- */
+.gh-header .nav-links a, #saludo-header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.gh-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gh-header {
+  background: url("../img/keyboard-lpsw7sus4web2y8i.jpg") center/cover no-repeat;
+  padding: 40px 0;
+  border-bottom: 2px solid #222;
+}
+
+.gh-header .gh-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4af3ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4af3ff;
+}
+
+/* --- FOOTER --- */
+.gh-footer {
+  padding: 20px 0;
+  background: #111;
+  text-align: center;
+  border-top: 2px solid #222;
+}
+
+.gh-footer p {
+  color: #888;
+  font-size: 14px;
+}
+
+
+@keyframes modalFade {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.btn-colaborar {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4af3ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-colaborar:hover {
+  background-color: #34d6e5;
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+#form-colaborar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #151515;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #4af3ff;
+}
+
+#form-colaborar input,
+#form-colaborar select {
+  padding: 10px;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.subform {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #4af3ff;
+}

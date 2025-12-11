@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiero Colaborar</title>
+  <link rel="stylesheet" href="css/quierocolaborar.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="gh-header">
+        <div class="gh-container">
+            <div class="logo">GameHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="seccion">
+        <h2>Quiero Colaborar</h2>
+
+        <form id="form-colaborar">
+
+            <!-- DATOS PERSONALES -->
+            <h3>Datos Personales</h3>
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="text" id="telefono" placeholder="Teléfono">
+
+            <!-- TIPO DE COLABORACIÓN -->
+            <h3>Tipo de colaboración</h3>
+
+            <select id="tipo-colaboracion" required>
+                <option value="">Seleccionar…</option>
+                <option value="dinero">Dinero</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="difusion">Difusión</option>
+            </select>
+
+            <!-- SECCIÓN DINERO -->
+            <div id="colaboracion-dinero" class="subform hidden">
+                <h3>Aporte económico</h3>
+
+                <label>Monto</label>
+                <input type="number" placeholder="Monto en ARS">
+
+                <label>Tipo de aporte</label>
+                <select>
+                    <option value="unico">Único</option>
+                    <option value="mensual">Mensual</option>
+                </select>
+
+                <label>Medio de pago</label>
+                <select>
+                    <option value="mp">MercadoPago</option>
+                    <option value="tarjeta">Tarjeta de crédito</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+            </div>
+
+            <!-- SECCIÓN TRABAJO -->
+            <div id="colaboracion-trabajo" class="subform hidden">
+                <h3>Colaboración mediante trabajo</h3>
+
+                <label>Rol</label>
+                <input type="text" placeholder="Ej: Diseñador, CM, Staff, etc.">
+
+                <label>Disponibilidad</label>
+                <select>
+                    <option value="full">Full time</option>
+                    <option value="part">Part time</option>
+                    <option value="horas">Por horas</option>
+                </select>
+
+                <label>Zona</label>
+                <input type="text" placeholder="Localidad / Región">
+
+                <label>Plataforma o juego preferido</label>
+                <input type="text" placeholder="Ej: LoL, CS2, Twitch, etc.">
+            </div>
+
+            <!-- SECCIÓN DIFUSIÓN -->
+            <div id="colaboracion-difusion" class="subform hidden">
+                <h3>Colaboración mediante difusión</h3>
+
+                <label>Redes sociales donde difundirás</label>
+                <input type="text" placeholder="Instagram, TikTok, Twitch, etc.">
+
+                <label>Frecuencia estimada</label>
+                <select>
+                    <option value="diaria">Diaria</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="mensual">Mensual</option>
+                </select>
+
+                <label>Kit de prensa</label>
+                <a class="btn-colaborar" href="kit-prensa.zip" download>Descargar kit</a>
+            </div>
+
+            <button type="submit" class="btn-colaborar">Enviar colaboración</button>
+        </form>
+
+        <br>
+        <a href="index.html" class="btn-colaborar">Volver al Home</a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="gh-footer">
+        <p>© 2025 GameHub - El gaming conoce la solidaridad</p>
+    </footer>
+
+    <script src="js/quierocolaborar.js"></script>
+</body>
+</html>
